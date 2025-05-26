@@ -1,11 +1,7 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import productos from '../data/productos';
 
-const productos = [
-  { id: 1, nombre: 'Mate Imperial', precio: '$4500', imagen: '/assets/mate1.jpg' },
-  { id: 2, nombre: 'Yerba Orgánica', precio: '$1500', imagen: '/assets/yerba1.jpg' },
-  { id: 3, nombre: 'Bombilla de Alpaca', precio: '$2000', imagen: '/assets/bombilla1.jpg' },
-  { id: 4, nombre: 'Set Matero', precio: '$12.000', imagen: '/assets/set-matero.jpg' }
-];
 
 function Tienda() {
   return (
@@ -14,6 +10,7 @@ function Tienda() {
       <Row>
         {productos.map(prod => (
           <Col key={prod.id} sm={12} md={6}  className="mb-4">
+            <Link to={`/tienda/${prod.id}`} className="text-decoration-none text-dark">
             <Card className="card-hover">
               <Card.Img variant="top" src={prod.imagen} className='img-card' />
               <Card.Body>
@@ -22,6 +19,7 @@ function Tienda() {
                 <Button variant="success">Comprar</Button>
               </Card.Body>
             </Card>
+            </Link>
           </Col>
         ))}
       </Row>

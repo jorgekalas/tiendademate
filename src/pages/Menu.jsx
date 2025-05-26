@@ -1,29 +1,6 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
-
-const menuItems = [
-  {
-    id: 1,
-    nombre: 'Mate de Calabaza',
-    descripcion: 'Clásico mate de boca ancha ideal para cebadas intensas.',
-    precio: '$15.200',
-    imagen: '/assets/menu1.jpg'
-  },
-  {
-    id: 2,
-    nombre: 'Yerba con Hierbas',
-    descripcion: 'Yerba saborizada con menta. 500g.',
-    precio: '$2.700',
-    imagen: '/assets/menu2.jpg'
-  },
-  {
-    id: 3,
-    nombre: 'Termo Inoxidable 1L',
-    descripcion: 'Termo de acero inoxidable, mantiene el agua caliente por 12 hs.',
-    precio: '$35.000',
-    imagen: '/assets/menu3.jpg'
-  },
-  { id: 4, nombre: 'Bolso Matero', descripcion: 'Bolso para llevar todo tu set de mate.', precio: '$9.800', imagen: '/assets/bolso-matero.jpg' }
-];
+import menuItems from '../data/menuItems';
+import { Link } from 'react-router-dom';
 
 function Menu() {
   return (
@@ -32,6 +9,7 @@ function Menu() {
       <Row>
         {menuItems.map(item => (
           <Col key={item.id} sm={12} md={6} className="mb-4">
+            <Link to={`/menu/${item.id}`} className="text-decoration-none text-dark">
             <Card className='card-hover'>
               <Card.Img variant="top" src={item.imagen} className='img-card' />
               <Card.Body>
@@ -40,6 +18,7 @@ function Menu() {
                 <Card.Text className="fw-bold">{item.precio}</Card.Text>
               </Card.Body>
             </Card>
+            </Link>
           </Col>
         ))}
       </Row>

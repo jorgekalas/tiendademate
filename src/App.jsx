@@ -8,6 +8,8 @@ import Trabaja from "./pages/Trabaja";
 import Franquicias from "./pages/Franquicias";
 import Contacto from "./pages/Contacto";
 import Footer from "./components/Footer";
+import ItemDetail from './pages/ItemDetail';
+import MenuItemDetail from './pages/MenuItemDetail';
 import { ToastContainer } from "react-toastify";
 import "./App.css";
 
@@ -21,8 +23,10 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/tienda" element={<Tienda />} />
+          <Route path="/tienda/:id" element={<ItemDetail />} />
 					<Route path="/tutoriales" element={<Tutoriales />} />
 					<Route path="/menu" element={<Menu />} />
+          <Route path="/menu/:id" element={<MenuItemDetail />} />
 					<Route path="/trabaja" element={<Trabaja />} />
 					<Route path="/franquicias" element={<Franquicias />} />
 					<Route path="/contacto" element={<Contacto />} />
