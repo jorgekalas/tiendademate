@@ -6,23 +6,23 @@ const menuItems = [
     nombre: 'Mate de Calabaza',
     descripcion: 'Clásico mate de boca ancha ideal para cebadas intensas.',
     precio: '$15.200',
-    imagen: 'src/assets/menu1.jpg'
+    imagen: '/assets/menu1.jpg'
   },
   {
     id: 2,
     nombre: 'Yerba con Hierbas',
     descripcion: 'Yerba saborizada con menta. 500g.',
     precio: '$2.700',
-    imagen: 'src/assets/menu2.jpg'
+    imagen: '/assets/menu2.jpg'
   },
   {
     id: 3,
     nombre: 'Termo Inoxidable 1L',
     descripcion: 'Termo de acero inoxidable, mantiene el agua caliente por 12 hs.',
     precio: '$35.000',
-    imagen: 'src/assets/menu3.jpg'
+    imagen: '/assets/menu3.jpg'
   },
-  { id: 4, nombre: 'Bolso Matero', descripcion: 'Bolso para llevar todo tu set de mate.', precio: '$9.800', imagen: 'src/assets/bolso-matero.jpg' }
+  { id: 4, nombre: 'Bolso Matero', descripcion: 'Bolso para llevar todo tu set de mate.', precio: '$9.800', imagen: '/assets/bolso-matero.jpg' }
 ];
 
 function Menu() {

@@ -1,10 +1,10 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 const productos = [
-  { id: 1, nombre: 'Mate Imperial', precio: '$4500', imagen: 'src/assets/mate1.jpg' },
-  { id: 2, nombre: 'Yerba Orgánica', precio: '$1500', imagen: 'src/assets/yerba1.jpg' },
-  { id: 3, nombre: 'Bombilla de Alpaca', precio: '$2000', imagen: 'src/assets/bombilla1.jpg' },
-  { id: 4, nombre: 'Set Matero', precio: '$12.000', imagen: 'src/assets/set-matero.jpg' }
+  { id: 1, nombre: 'Mate Imperial', precio: '$4500', imagen: '/assets/mate1.jpg' },
+  { id: 2, nombre: 'Yerba Orgánica', precio: '$1500', imagen: '/assets/yerba1.jpg' },
+  { id: 3, nombre: 'Bombilla de Alpaca', precio: '$2000', imagen: '/assets/bombilla1.jpg' },
+  { id: 4, nombre: 'Set Matero', precio: '$12.000', imagen: '/assets/set-matero.jpg' }
 ];
 
 function Tienda() {

@@ -5,19 +5,19 @@ const tutoriales = [
     id: 1,
     titulo: 'Cómo curar un mate nuevo',
     descripcion: 'Paso a paso para curar tu mate de calabaza o madera.',
-    imagen: 'src/assets/tutorial1.jpg'
+    imagen: '/assets/tutorial1.jpg'
   },
   {
     id: 2,
     titulo: 'Cómo preparar un buen mate',
     descripcion: 'Temperatura del agua, tipo de yerba y técnica correcta.',
-    imagen: 'src/assets/tutorial2.jpg'
+    imagen: '/assets/tutorial2.jpg'
   },
   {
     id: 3,
     titulo: 'Cómo limpiar tu bombilla',
     descripcion: 'Trucos para mantenerla siempre impecable.',
-    imagen: 'src/assets/tutorial3.jpg'
+    imagen: '/assets/tutorial3.jpg'
   }
 ];
 
