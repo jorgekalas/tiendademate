@@ -1,0 +1,173 @@
+/*///////////////////// VARIABLES ///////////////////////*/
+
+:root {
+  --color-primario: #2c2c2c;
+  --color-secundario: #a67c52;
+  --color-fondo: #ffffff;
+  --color-texto: #212529;
+  --color-acento: #198754;
+  --color-hover: #865e36;
+  --max-width: 1140px;
+}
+
+/*///////////////////// RESET ///////////////////////*/
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+#root {
+  height: 100%;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page-content {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*///////////////////// NAVBAR ///////////////////////*/
+
+.navbar {
+  background-color: var(--color-primario) !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--color-secundario) !important;
+}
+
+/*///////////////////// LOGO ///////////////////////*/
+
+.logo-home {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.texto-bienvenida{
+  margin-top: 2rem;
+}
+
+/*///////////////////// CARDS ///////////////////////*/
+
+.img-card {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.375rem;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/*///////////////////// BUTTONS ///////////////////////*/
+
+button,
+.btn {
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+}
+
+button:hover,
+.btn:hover {
+  background-color: var(--color-hover) !important;
+  color: #fff;
+}
+
+/*///////////////////// FOOTER ///////////////////////*/
+
+.footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  color: var(--color-texto);
+  font-size: 0.9rem;
+}
+
+/*///////////////////// MEDIA QUERIES ///////////////////////*/
+
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+  .page-content {
+    padding: 1.5rem;
+  }
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+  .page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .logo-home {
+    max-width: 180px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .card .btn {
+    width: 100%;
+  }
+}
+
+/* Mobile 1 */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .page-content {
+    padding: 1rem;
+  }
+}
+
+/* Mobile 2 */
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
